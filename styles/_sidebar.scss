@@ -1,0 +1,43 @@
+.sidebar {
+  background-color: #2da2cd;
+  box-shadow: 7px 0px 0px 1px rgba(240,240,240,0.97);
+  position: fixed;
+  top: 0;
+  height: 160px;
+  z-index: 1000;
+
+  &__list {
+    padding: 0;
+
+    li {
+      list-style: none;
+      background-color: transparent;
+      margin-bottom: 20px;
+
+      button {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: black;
+        width: 100%;
+        text-align: left;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        &.active {
+          color: white;
+          background-color: black;
+          border: 1px solid black;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .sidebar {
+    position: fixed;
+    width: 300px;
+    height: 100%;
+  }
+}
